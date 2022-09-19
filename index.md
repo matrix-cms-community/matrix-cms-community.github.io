@@ -26,3 +26,11 @@ getMetadata: function(machineName) {
 
 ### Workaround
 Non-DRY code. Instead of having your repeating code written out once in a function with only the different parts passed to it, you have to repeat every step. Not a big deal in the example above, but it becomes very messy if you want to retrieve data and manipulate it before returning it.
+
+
+## Git file bridge
+`Matrix <v6.8.x`
+The default branch in your repo must be named "master". Any other name (eg. "main") will mean you'll not be able to clone the repo into Matrix (either via HTTPS or SSH). [Issue in SquizMap.](https://squizmap.squiz.net/matrix/12552)
+
+### Workaround
+Change the default branch to "master" in your git repo.
